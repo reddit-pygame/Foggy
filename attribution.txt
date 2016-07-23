@@ -1,0 +1,26 @@
+Licenses
+
+CC-BY 3.0     http://creativecommons.org/licenses/by/3.0/legalcode
+
+
+
+Tree images
+Source: http://opengameart.org/content/lpc-tree-recolors Original trees by C. Nilsson, recolored by http://opengameart.org/users/williamthompsonj
+License: CC-BY 3.0
+
+Grass Tiles
+Source: http://opengameart.org/content/autumn-tileset-for-rpgs
+Author: knunery http://opengameart.org/users/knunery
+License: CC-BY 3.0
+
+Wolf images
+Source: http://opengameart.org/content/lpc-wolf-animation
+Author: Stephen "Redshrike" Challener (graphic artist) and William.Thompsonj (contributor)
+License: CC-BY-3.0
+
+Female Ranger sprite images
+Source: http://opengameart.org/content/antifareas-rpg-sprite-set-1-enlarged-w-transparent-background-fixed
+Author: Antifarea
+License: CC-BY 3.0
+
+All code is public domain.
