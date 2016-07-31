@@ -82,6 +82,7 @@ class Game(object):
             self.update(dt)
             self.draw()
             pg.display.update()
+            pg.display.set_caption("{}".format(self.clock.get_fps()))
 
 
 class GameState(object):

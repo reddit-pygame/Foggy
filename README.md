@@ -3,11 +3,15 @@
 This challenge focuses on implementing different types of "fog-of-war" efects. The provided code is a top-down "game"
  consisting of a player controlled sprite, roving wolves and collidable trees. 
  
+Github repo: https://github.com/reddit-pygame/Foggy
+
+Challenge thread: https://www.reddit.com/r/pygame/comments/4u8iht/challenge_fog_of_war/
+ 
 #Challenge 
  
 There are three options for this challenge:
 
-**Night Vision** - The player can only see the portion of the game world within 200 pixels of the player's character.
+**Dark Vision** - The player can only see the portion of the game world within 200 pixels of the player's character.
 
 **Fading Light** - The player can only see the portion of the game world within 200 pixels of the player's character. Additionally,
  the greater the distance from the player the more the world is obscured by darkness (as if the player was using a torch).
@@ -47,6 +51,7 @@ There are three options for this challenge:
 [Egg Lob](https://www.reddit.com/r/pygame/comments/4dcvq4/challenge_egg_lob/) | 
 [Build-A-Sprite](https://www.reddit.com/r/pygame/comments/4g3m7n/challenge_buildasprite/) | 
 [Matrix Digital Rain](https://www.reddit.com/r/pygame/comments/4jg5cf/challenge_matrix_digital_rain/) | 
+[Desktop Calculator](https://www.reddit.com/r/pygame/comments/4mnu2x/challenge_desktop_calculator/) | 
 [Planet Hopper](https://www.reddit.com/r/pygame/comments/4qcgmd/challenge_planet_hopper/)
 
 

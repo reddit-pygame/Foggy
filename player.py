@@ -9,7 +9,7 @@ from tools import strip_from_sheet as strip
 class Player(pg.sprite.Sprite):
     def __init__(self, pos, *groups):
         super(Player, self).__init__(*groups)
-        self.pos = pos        
+        self.pos = pos
         self.move_keys = {
                 pg.K_LEFT: "left",
                 pg.K_RIGHT: "right",
@@ -25,9 +25,9 @@ class Player(pg.sprite.Sprite):
         self.last_direction = self.direction
         img_size = (32, 36)
         self.image_dict = {
-                "left": cycle(strip(GFX["ranger_f"], (0, 108), img_size, 3)), 
-                "right": cycle(strip(GFX["ranger_f"], (0,36), img_size, 3)), 
-                "down": cycle(strip(GFX["ranger_f"], (0, 72), img_size, 3)), 
+                "left": cycle(strip(GFX["ranger_f"], (0, 108), img_size, 3)),
+                "right": cycle(strip(GFX["ranger_f"], (0,36), img_size, 3)),
+                "down": cycle(strip(GFX["ranger_f"], (0, 72), img_size, 3)),
                 "up": cycle(strip(GFX["ranger_f"], (0, 0), img_size, 3))}
         self.images = self.image_dict[self.direction]
         self.image = next(self.images)
@@ -37,8 +37,8 @@ class Player(pg.sprite.Sprite):
         self.speed = .1
         self.footprint = pg.Rect(0, 0, 30, 6)
         self.footprint.midbottom = self.rect.midbottom
-        
-    def collide(self, other):     
+
+    def collide(self, other):
         rect = other.footprint
         offsets = {
                 "left": (rect.right - self.footprint.left, 0),
@@ -79,12 +79,12 @@ class Player(pg.sprite.Sprite):
             dx = vx * self.speed * dt
             dy = vy * self.speed * dt
         self.pos = self.pos[0] + dx, self.pos[1] + dy
-        self.rect.center = self.pos        
+        self.rect.center = self.pos
         r = self.rect.clamp(SCREEN_RECT)
         if r != self.rect:
             self.rect = r
             self.pos = self.rect.center
         self.footprint.midbottom = self.rect.midbottom
-        
+
     def draw(self, surface):
-        surface.blit(self.image, self.rect)    
+        surface.blit(self.image, self.rect)
